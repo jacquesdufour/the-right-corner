@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b9ee9b56-dfdb-4568-bc30-fef768bc09e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ClassifiesdsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ClassifiedsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/classifiesds/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/classifieds/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -166,6 +168,11 @@
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DUFOUR\Documents\Hexagone\Web\the-right-corner" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -181,11 +188,23 @@
       <option name="presentableId" value="Default" />
       <updated>1625250696005</updated>
       <workItem from="1625250697622" duration="3613000" />
-      <workItem from="1625385238897" duration="4651000" />
+      <workItem from="1625385238897" duration="5464000" />
+      <workItem from="1625421992560" duration="4076000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
