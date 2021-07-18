@@ -161,7 +161,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../videotube-symfony" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../correction" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -191,7 +191,9 @@
       <workItem from="1625385238897" duration="5464000" />
       <workItem from="1625421992560" duration="4372000" />
       <workItem from="1626419202976" duration="8127000" />
-      <workItem from="1626515575002" duration="12421000" />
+      <workItem from="1626515575002" duration="12515000" />
+      <workItem from="1626619590796" duration="2311000" />
+      <workItem from="1626634320909" duration="586000" />
     </task>
     <servers />
   </component>
