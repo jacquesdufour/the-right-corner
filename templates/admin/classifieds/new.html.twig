@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Classifieds{% endblock %}
+
+{% block body %}
+    <h1>Create new Classifieds</h1>
+
+    {{ include('admin/classifieds/_form.html.twig') }}
+
+    <a href="{{ path('admin_classifieds_index') }}" class="btn btn-secondary">back to list</a>
+{% endblock %}

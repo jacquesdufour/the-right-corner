@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Classifieds{% endblock %}
+
+{% block body %}
+    <h1>Classifieds</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ classified.id }}</td>
+            </tr>
+            <tr>
+                <th>Owner</th>
+                <td>{{ classified.owner }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ classified.title }}</td>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <td>{{ classified.category }}</td>
+            </tr>
+            <tr>
+                <th>PublishedAt</th>
+                <td>{{ classified.publishedAt ? classified.publishedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Text</th>
+                <td>{{ classified.text }}</td>
+            </tr>
+            <tr>
+                <th>Picture</th>
+                <td>{{ classified.picture }}</td>
+            </tr>
+            <tr>
+                <th>Town</th>
+                <td>{{ classified.town }}</td>
+            </tr>
+            <tr>
+                <th>Postcode</th>
+                <td>{{ classified.postcode }}</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>{{ classified.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin_classifieds_index') }}">back to list</a>
+
+    <a href="{{ path('admin_classifieds_edit', {'id': classified.id}) }}">edit</a>
+
+    {{ include('admin/classifieds/_delete_form.html.twig') }}
+{% endblock %}

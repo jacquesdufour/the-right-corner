@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Classifieds index{% endblock %}
+
+{% block body %}
+    <h1>Classifieds index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Owner</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>PublishedAt</th>
+                <th>Text</th>
+                <th>Picture</th>
+                <th>Town</th>
+                <th>Postcode</th>
+                <th>Price</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for classified in classifieds %}
+            <tr>
+                <td>{{ classified.id }}</td>
+                <td>{{ classified.owner }}</td>
+                <td>{{ classified.title }}</td>
+                <td>{{ classified.category }}</td>
+                <td>{{ classified.publishedAt ? classified.publishedAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ classified.text }}</td>
+                <td>{{ classified.picture }}</td>
+                <td>{{ classified.town }}</td>
+                <td>{{ classified.postcode }}</td>
+                <td>{{ classified.price }}</td>
+                <td>
+                    <a href="{{ path('admin_classifieds_show', {'id': classified.id}) }}">show</a>
+                    <a href="{{ path('admin_classifieds_edit', {'id': classified.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('admin_classifieds_new') }}" class="btn btn-warning">Create new</a>
+{% endblock %}
